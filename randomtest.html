@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Random</title>
+    <link rel="stylesheet" href="random.css">
+
+</head>
+<body>
+    <script type="text/javascript">     
+        $(document).ready(function(){
+        var images=['../kuvat/random1.jpg',
+                    '../kuvat/random1.jpg',
+                    '../kuvat/random1.jpg',
+                    '../kuvat/random1.jpg',
+                    '../kuvat/random1.jpg',];
+        
+        var randomNumber = Math.floor(Math.random() * images.length);
+        var bgImg = 'url(' + images[randomNumber] + ')';
+        
+        $('body').css({'background':bgImg, 'background-size':'cover', });
+        
+        });
+
+    </script>
+    <h1> hei </h1>
+    <div class="Button">
+        <button onClick="window.location.reload();">Next</button>
+    </div>
+</body>
+</html>
